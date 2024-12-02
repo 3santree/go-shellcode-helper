@@ -30,7 +30,7 @@ import (
 func Run(shellcode []byte) {
 	verbose := flag.Bool("verbose", false, "Enable verbose output")
 	debug := flag.Bool("debug", false, "Enable debug output")
-	program := flag.String("program", "C:\\Windows\\System32\\notepad.exe", "The program to start and inject shellcode into")
+	program := flag.String("program", "C:\\Windows\\System32\\RuntimeBroker.exe", "The program to start and inject shellcode into")
 	args := flag.String("args", "", "Program command line arguments")
 	flag.Usage = func() {
 		flag.PrintDefaults()
